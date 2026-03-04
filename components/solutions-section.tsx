@@ -2,12 +2,19 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { ArrowRight, LucideIcon } from "lucide-react";
+import { ArrowRight, GraduationCap, Users, FileSearch, Building2, LucideIcon } from "lucide-react";
 
 interface SolutionFeature {
   title: string;
   description: string;
 }
+
+const iconMap: Record<string, LucideIcon> = {
+  "graduation-cap": GraduationCap,
+  "users": Users,
+  "file-search": FileSearch,
+  "building": Building2,
+};
 
 interface SolutionsSectionProps {
   id: string;
@@ -15,7 +22,7 @@ interface SolutionsSectionProps {
   features: SolutionFeature[];
   linkText: string;
   linkHref: string;
-  icon: LucideIcon;
+  iconName: "graduation-cap" | "users" | "file-search" | "building";
   variant?: "default" | "accent";
 }
 
@@ -25,10 +32,11 @@ export function SolutionsSection({
   features,
   linkText,
   linkHref,
-  icon: Icon,
+  iconName,
   variant = "default",
 }: SolutionsSectionProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const Icon = iconMap[iconName];
 
   useEffect(() => {
     const observer = new IntersectionObserver(

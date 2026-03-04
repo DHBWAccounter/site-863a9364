@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import { GraduationCap, Users, FileSearch, Building2 } from "lucide-react";
 import { SolutionsHero } from "@/components/solutions-hero";
 import { SolutionsSection } from "@/components/solutions-section";
 import { SolutionsDisciplines } from "@/components/solutions-disciplines";
@@ -112,7 +111,7 @@ export default function SolutionsPage() {
         features={graduateStudentFeatures}
         linkText="Learn More About Graduate Student Tools"
         linkHref="/contact"
-        icon={GraduationCap}
+        iconName="graduation-cap"
         variant="default"
       />
 
@@ -122,7 +121,7 @@ export default function SolutionsPage() {
         features={facultyFeatures}
         linkText="Learn More About PI Tools"
         linkHref="/contact"
-        icon={Users}
+        iconName="users"
         variant="accent"
       />
 
@@ -132,7 +131,7 @@ export default function SolutionsPage() {
         features={systematicReviewFeatures}
         linkText="Learn More About Systematic Review Tools"
         linkHref="/contact"
-        icon={FileSearch}
+        iconName="file-search"
         variant="default"
       />
 
@@ -142,7 +141,7 @@ export default function SolutionsPage() {
         features={institutionFeatures}
         linkText="Contact Us About Institutional Solutions"
         linkHref="/contact"
-        icon={Building2}
+        iconName="building"
         variant="accent"
       />
 
