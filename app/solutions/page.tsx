@@ -3,7 +3,7 @@ import { GraduationCap, Users, FileSearch, Building2 } from "lucide-react";
 import { SolutionsHero } from "@/components/solutions-hero";
 import { SolutionsSection } from "@/components/solutions-section";
 import { SolutionsDisciplines } from "@/components/solutions-disciplines";
-import { CtaSection } from "@/components/cta-section";
+import { CTASection } from "@/components/cta-section";
 
 export const metadata: Metadata = {
   title: "Solutions | ScholariumAI",
@@ -148,7 +148,7 @@ export default function SolutionsPage() {
 
       <SolutionsDisciplines />
 
-      <CtaSection
+      <CTASection
         title="Find Your Solution"
         description="Tell us about your research context, and we'll show you how ScholariumAI can help."
         buttonText="Talk to Solutions Team"

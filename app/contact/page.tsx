@@ -3,7 +3,7 @@ import { Footer } from "@/components/footer";
 import { ContactHero } from "@/components/contact-hero";
 import { ContactForm } from "@/components/contact-form";
 import { ContactInfo } from "@/components/contact-info";
-import { CtaSection } from "@/components/cta-section";
+import { CTASection } from "@/components/cta-section";
 
 export const metadata = {
   title: "Contact | ScholariumAI",
@@ -18,7 +18,7 @@ export default function ContactPage() {
         <ContactHero />
         <ContactForm />
         <ContactInfo />
-        <CtaSection
+        <CTASection
           title="Ready to Start?"
           description="Skip the queue and start your free trial now—no need to wait for a response."
           buttonText="Start Free Trial"
